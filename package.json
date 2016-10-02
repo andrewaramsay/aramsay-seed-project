@@ -10,7 +10,6 @@
     "buildClient": "rimraf dist/client && webpack --config config/webpack.prod.js --progress --profile --bail",
     "buildServer": "rimraf dist/server && tsc --project tsconfig.server.json",
     "application": "set NODE_ENV=production&& node dist/server/src/server/index.js",
-    "buildRun": "npm run buildServer && npm run application",
     "postinstall": "typings install"
   },
   "keywords": [

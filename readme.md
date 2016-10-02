@@ -2,12 +2,13 @@
 
 * `npm install` - Install all dependencies and typings files
 * `npm test` - Run all unit tests
-* `npm run build` - Build the production-ready client code, place in the 'dist' folder
+* `npm run build` - Build the production-ready server and client code, place in the 'dist' folder
+* `npm run application` - Starts the server sitting in the 'dist' folder (output of `npm run build`)
 * `npm start` - Start the dev server, point your browser at http://localhost:8080/ to test
 
 # Server
-The server uses dependency injection supplied by (aramsay-injector)[https://github.com/andrewaramsay/aramsay-injector], and declarative express route config using
-(aramsay-express-router)[https://github.com/andrewaramsay/aramsay-express-router].  
+The server uses dependency injection supplied by [aramsay-injector](https://github.com/andrewaramsay/aramsay-injector), and declarative express route config using
+[aramsay-express-router](https://github.com/andrewaramsay/aramsay-express-router).  
 
 ### Dependency Injection
 All server code should be written as TypeScript classes decorated with the `@Injectable()` decorator.  Dependencies will be automatically injected as long as they too are decorated 
